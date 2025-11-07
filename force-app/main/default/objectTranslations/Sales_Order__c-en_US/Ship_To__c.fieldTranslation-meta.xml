@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Ship To --></label>
+    <name>Ship_To__c</name>
+    <picklistValues>
+        <masterLabel>Africa</masterLabel>
+        <translation><!-- Africa --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Africa SH</masterLabel>
+        <translation><!-- Africa SH --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Asia</masterLabel>
+        <translation><!-- Asia --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Asia SH</masterLabel>
+        <translation><!-- Asia SH --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Europe</masterLabel>
+        <translation><!-- Europe --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Europe SH</masterLabel>
+        <translation><!-- Europe SH --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>House</masterLabel>
+        <translation><!-- House --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>India</masterLabel>
+        <translation><!-- India --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>India SH</masterLabel>
+        <translation><!-- India SH --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Intercompany</masterLabel>
+        <translation><!-- Intercompany --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ME</masterLabel>
+        <translation><!-- ME --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ME SH</masterLabel>
+        <translation><!-- ME SH --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mara</masterLabel>
+        <translation><!-- Mara --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NA</masterLabel>
+        <translation><!-- NA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UAE</masterLabel>
+        <translation><!-- UAE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UAE SH</masterLabel>
+        <translation><!-- UAE SH --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

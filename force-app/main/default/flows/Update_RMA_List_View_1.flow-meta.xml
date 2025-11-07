@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>65.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <name>myRule_1</name>
+        <label>RMA Completed</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>RMA_Received_Canada</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>FALSE_RMA Completed</defaultConnectorLabel>
+        <rules>
+            <name>TRUE_RMA_Completed</name>
+            <conditionLogic>1 AND NOT(2)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.labels__c</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>RMA_Completed</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.labels__c</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>RMA_Cancel</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_RMA_List_view_to_RMA_Completed</targetReference>
+            </connector>
+            <label>TRUE_RMA Completed</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>myRule_11</name>
+        <label>RMA In Progress</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>RMA_Received</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>FALSE_RMA In Progress</defaultConnectorLabel>
+        <rules>
+            <name>TRUE_RMA_In_Progress</name>
+            <conditionLogic>1 AND NOT(2) AND (3 OR 4 OR 5)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.labels__c</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>RMA_Initiated</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.labels__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>RMA_Cancel</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>New</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Open</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Pending</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_RMA_View_to_RMA_In_Progress</targetReference>
+            </connector>
+            <label>TRUE_RMA In Progress</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>RMA_Approval_Pending</name>
+        <label>RMA Approval Pending</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>myRule_11</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>FALSE_RMA Approval Pending</defaultConnectorLabel>
+        <rules>
+            <name>TRUE_RMA_Approval_Pending</name>
+            <conditionLogic>1 AND (NOT(2)) AND (NOT(3)) AND (4 OR 5 OR 6)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.labels__c</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>RMA_Approval_Sent</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.labels__c</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>RMA_Initiated</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.labels__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>RMA_Initiated</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>New</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Open</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Pending</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_9_A1</targetReference>
+            </connector>
+            <label>TRUE_RMA Approval Pending</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>RMA_Cancelled</name>
+        <label>RMA Cancelled</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>RMA_Approval_Pending</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>FALSE_RMA Cancelled</defaultConnectorLabel>
+        <rules>
+            <name>TRUE_RMA_Cancelled</name>
+            <conditionLogic>1 AND NOT(2)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.labels__c</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>RMA_Cancel</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.labels__c</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>RMA_Completed</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_RMA_list_view_to_RMA_Cancelled</targetReference>
+            </connector>
+            <label>TRUE_RMA Cancelled</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>RMA_Received</name>
+        <label>RMA Received</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>FALSE_RMA Received</defaultConnectorLabel>
+        <rules>
+            <name>TRUE_RMA_Received</name>
+            <conditionLogic>1 AND (2 OR 3)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.custom_rma_device_received_date__c</leftValueReference>
+                <operator>GreaterThan</operator>
+                <rightValue>
+                    <dateTimeValue>2015-01-01T04:30:00.000Z</dateTimeValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Open</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Pending</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_RMA_list_view_to_RMA_Received</targetReference>
+            </connector>
+            <label>TRUE_RMA Received</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>RMA_Received_Canada</name>
+        <label>RMA Received Canada</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>RMA_Received_India</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>FALSE_RMA Received Canada</defaultConnectorLabel>
+        <rules>
+            <name>TRUE_myRule_3</name>
+            <conditionLogic>1 AND 2 AND (3 OR 4)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.custom_rma_devices_sent_to__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Canada</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.custom_rma_device_received_date__c</leftValueReference>
+                <operator>GreaterThan</operator>
+                <rightValue>
+                    <dateTimeValue>2015-01-01T04:30:00.000Z</dateTimeValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Pending</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Open</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_RMA_List_view_to_RMA_Received_Canada</targetReference>
+            </connector>
+            <label>TRUE_RMA Received Canada</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>RMA_Received_India</name>
+        <label>RMA Received India</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>RMA_Cancelled</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>FALSE_RMA Received India</defaultConnectorLabel>
+        <rules>
+            <name>TRUE_RMA_Received_India</name>
+            <conditionLogic>1 AND 2 AND (3 OR 4)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.custom_rma_devices_sent_to__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>India</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.custom_rma_device_received_date__c</leftValueReference>
+                <operator>GreaterThan</operator>
+                <rightValue>
+                    <dateTimeValue>2015-01-01T04:30:00.000Z</dateTimeValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Pending</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Open</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_RMA_List_view_to_RMA_Received_India</targetReference>
+            </connector>
+            <label>TRUE_RMA Received India</label>
+        </rules>
+    </decisions>
+    <description>Migrated from the Update RMA List View process using multiple criteria.</description>
+    <environments>Default</environments>
+    <label>Update RMA List View_1</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>myRule_9_A1</name>
+        <label>Update RMA List view to RMA Approval Pending</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <inputAssignments>
+            <field>RMA_View_List__c</field>
+            <value>
+                <stringValue>RMA Approval Pending</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_RMA_list_view_to_RMA_Cancelled</name>
+        <label>Update RMA list view to RMA Cancelled</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <inputAssignments>
+            <field>RMA_View_List__c</field>
+            <value>
+                <stringValue>RMA Cancelled</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_RMA_List_view_to_RMA_Completed</name>
+        <label>Update RMA List view to RMA Completed</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <inputAssignments>
+            <field>RMA_View_List__c</field>
+            <value>
+                <stringValue>RMA Completed</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_RMA_list_view_to_RMA_Received</name>
+        <label>Update RMA list view to RMA Received</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <inputAssignments>
+            <field>RMA_View_List__c</field>
+            <value>
+                <stringValue>RMA Received</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_RMA_List_view_to_RMA_Received_Canada</name>
+        <label>Update RMA List view to RMA Received Canada</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <inputAssignments>
+            <field>RMA_View_List__c</field>
+            <value>
+                <stringValue>RMA Received Canada</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_RMA_List_view_to_RMA_Received_India</name>
+        <label>Update RMA List view to RMA Received India</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <inputAssignments>
+            <field>RMA_View_List__c</field>
+            <value>
+                <stringValue>RMA Received India</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_RMA_View_to_RMA_In_Progress</name>
+        <label>Update RMA View to RMA In Progress</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <inputAssignments>
+            <field>RMA_View_List__c</field>
+            <value>
+                <stringValue>RMA In Progress</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>myRule_1</targetReference>
+        </connector>
+        <object>Case</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Draft</status>
+</Flow>

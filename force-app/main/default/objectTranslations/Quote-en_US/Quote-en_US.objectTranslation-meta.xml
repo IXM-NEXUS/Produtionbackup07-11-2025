@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <layouts>
+        <layout>Quote Layout</layout>
+        <sections>
+            <label><!-- Automations --></label>
+            <section>Automations</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Edit Quote --></label>
+        <name>EditQuote</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Edit Products --></label>
+        <name>Edit_Line_Items</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Generate PDF --></label>
+        <name>Generate_PDF</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- SendEmail --></label>
+        <name>SendEmail</name>
+    </quickActions>
+    <validationRules>
+        <errorMessage><!-- Please Mention the reason of Approval. e.g 10% Discount given, Lumpsum Discount given --></errorMessage>
+        <name>Conditional_review_requested_field</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- From Draft you can only move to In Review. From Approved or Rejected you can only move to Draft. --></errorMessage>
+        <name>In_review_must_be_selected</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Quote cannot be created or updated because the account&apos;s approval status is currently pending. --></errorMessage>
+        <name>Lock_Quote</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Expiry date can not be a date in Past --></errorMessage>
+        <name>Past_Date_Expiry</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please mention reason for review. Example: Incoterm update, Payment Term Update, New Customer, Offering Discount etc. --></errorMessage>
+        <name>Reason_of_Approval</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Create_QUote --></label>
+        <name>Create_QUote</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Edit_Quotes --></label>
+        <name>Edit_Quotes</name>
+    </webLinks>
+</CustomObjectTranslation>

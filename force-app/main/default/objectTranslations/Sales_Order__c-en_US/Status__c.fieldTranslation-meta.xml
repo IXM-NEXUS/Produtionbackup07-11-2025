@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Status --></label>
+    <name>Status__c</name>
+    <picklistValues>
+        <masterLabel>Cancelled</masterLabel>
+        <translation><!-- Cancelled --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Deposit</masterLabel>
+        <translation><!-- Deposit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Open</masterLabel>
+        <translation><!-- Open --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Open - C</masterLabel>
+        <translation><!-- Open - C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending Approval</masterLabel>
+        <translation><!-- Pending Approval --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending Approval-C</masterLabel>
+        <translation><!-- Pending Approval-C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending Payment</masterLabel>
+        <translation><!-- Pending Payment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending Payment-C</masterLabel>
+        <translation><!-- Pending Payment-C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Released</masterLabel>
+        <translation><!-- Released --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Released - C</masterLabel>
+        <translation><!-- Released - C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Shipped</masterLabel>
+        <translation><!-- Shipped --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Shipped - C</masterLabel>
+        <translation><!-- Shipped - C --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Days_Committed__c - Delivery__c --></help>
+    <label><!-- OTD reporting --></label>
+    <name>OTD_reporting__c</name>
+</CustomFieldTranslation>

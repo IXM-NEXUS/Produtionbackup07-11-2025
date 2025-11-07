@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Enter Target for Q3 --></help>
+    <label><!-- Quarter 3 --></label>
+    <name>Quarter_3__c</name>
+</CustomFieldTranslation>

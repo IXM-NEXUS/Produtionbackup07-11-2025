@@ -1,0 +1,593 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Case_Resolved_Email</fullName>
+        <description>Case Resolved Email</description>
+        <protected>false</protected>
+        <recipients>
+            <field>ContactEmail</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>order@invixium.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Services_Templates/Resolved_Case</template>
+    </alerts>
+    <alerts>
+        <fullName>Engineering_Pending</fullName>
+        <ccEmails>NGajjar@invixium.com</ccEmails>
+        <ccEmails>DPatel@invixium.com</ccEmails>
+        <ccEmails>nkhader@invixium.com</ccEmails>
+        <description>Engineering Pending</description>
+        <protected>false</protected>
+        <senderAddress>order@invixium.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Services_Templates/Engineering_Pending</template>
+    </alerts>
+    <alerts>
+        <fullName>Feedback</fullName>
+        <description>Feedback</description>
+        <protected>false</protected>
+        <recipients>
+            <field>ContactId</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderAddress>order@invixium.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Feedback_tem</template>
+    </alerts>
+    <alerts>
+        <fullName>Feedback_Label_Email_Template</fullName>
+        <description>Feedback Label Email Template</description>
+        <protected>false</protected>
+        <recipients>
+            <field>ContactEmail</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>order@invixium.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Latest_Test_Email_Template</template>
+    </alerts>
+    <alerts>
+        <fullName>Re_open_7_Days_Pending_Case</fullName>
+        <description>Re-open 7 Days Pending Case</description>
+        <protected>false</protected>
+        <recipients>
+            <field>ContactId</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderAddress>order@invixium.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Services_Templates/X7_Day_Pending_Reminder</template>
+    </alerts>
+    <alerts>
+        <fullName>Reminder_Mail_1</fullName>
+        <ccEmails>ixmsupport@invixium.com</ccEmails>
+        <description>Reminder Mail 1</description>
+        <protected>false</protected>
+        <recipients>
+            <field>ContactEmail</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>order@invixium.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Services_Templates/First_pending_Reminder</template>
+    </alerts>
+    <alerts>
+        <fullName>Reminder_Mail_2</fullName>
+        <ccEmails>ixmsupport@invixium.com</ccEmails>
+        <description>Reminder Mail 2</description>
+        <protected>false</protected>
+        <recipients>
+            <field>ContactEmail</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>order@invixium.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Services_Templates/Second_pending_Reminder</template>
+    </alerts>
+    <alerts>
+        <fullName>Reminder_Mail_Final</fullName>
+        <ccEmails>ixmsupport@invixium.com</ccEmails>
+        <description>Reminder Mail Final</description>
+        <protected>false</protected>
+        <recipients>
+            <field>ContactEmail</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>order@invixium.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Services_Templates/Third_and_Final_Pending_Reminder</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>ChangePriorityToHigh</fullName>
+        <field>Priority</field>
+        <literalValue>High</literalValue>
+        <name>Changes the case priority to high.</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>PENDING_REMINDER_FINAL</fullName>
+        <field>labels__c</field>
+        <formula>labels__c + &quot;, Pending_Reminder_Final&quot;</formula>
+        <name>PENDING REMINDER FINAL</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Pending_Remidner_1</fullName>
+        <field>labels__c</field>
+        <formula>labels__c+&quot;, Pending_Reminder_1&quot;</formula>
+        <name>Pending Remidner 1</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Pending_Time</fullName>
+        <field>Pending_At__c</field>
+        <formula>NOW()</formula>
+        <name>Pending Time</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Priority_8</fullName>
+        <field>Priority</field>
+        <literalValue>8</literalValue>
+        <name>Priority 8</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Resolved_TIme</fullName>
+        <field>resolved_at__c</field>
+        <formula>NOW()</formula>
+        <name>Resolved TIme</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>SetSLAViolationToTrue</fullName>
+        <field>isSLAViolated__c</field>
+        <literalValue>1</literalValue>
+        <name>SetSLAViolationToTrue</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>UpdateSLA</fullName>
+        <field>SLA_Violdation_D_T__c</field>
+        <formula>NOW()</formula>
+        <name>UpdateSLA</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>label2</fullName>
+        <field>labels__c</field>
+        <formula>IF(CONTAINS( labels__c,&quot;9 hours&quot;), SUBSTITUTE(labels__c,&quot;9 hours&quot;, &quot;&quot; ),labels__c)</formula>
+        <name>label2</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>labels1</fullName>
+        <field>labels__c</field>
+        <formula>IF(CONTAINS( labels__c,&quot;8 hours&quot;), SUBSTITUTE(labels__c, &quot;8 hours&quot;, &quot;&quot; ), labels__c)</formula>
+        <name>labels</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>pending_reminder_2</fullName>
+        <field>labels__c</field>
+        <formula>labels__c+&quot;, Pending_Reminder_2&quot;</formula>
+        <name>pending reminder 2</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>status</fullName>
+        <field>Status</field>
+        <literalValue>Pending</literalValue>
+        <name>status</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>status1</fullName>
+        <field>Status</field>
+        <literalValue>Open</literalValue>
+        <name>status</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>status2</fullName>
+        <field>Status</field>
+        <literalValue>Open</literalValue>
+        <name>status2</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Latest Label Notification Email</fullName>
+        <actions>
+            <name>Feedback_Label_Email_Template</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <description>Rule trigger when new label add</description>
+        <formula>IF(ISCHANGED(Latest_Label__c),True ,False)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Pending At Time</fullName>
+        <actions>
+            <name>Pending_Time</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>Pending</value>
+        </criteriaItems>
+        <description>Timestamp when case reach pending state</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Pending Reminder 1</fullName>
+        <active>true</active>
+        <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND 6 AND 7 AND 8 AND 9 AND 10 AND 11 AND 12</booleanFilter>
+        <criteriaItems>
+            <field>Case.Origin</field>
+            <operation>equals</operation>
+            <value>Email</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.labels__c</field>
+            <operation>notContain</operation>
+            <value>Transguard</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>Pending</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.labels__c</field>
+            <operation>notContain</operation>
+            <value>RMA_Pending</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.labels__c</field>
+            <operation>notContain</operation>
+            <value>1 Day Pending</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.labels__c</field>
+            <operation>notContain</operation>
+            <value>2 Days Pending</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.labels__c</field>
+            <operation>notContain</operation>
+            <value>3 Days Pending</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.labels__c</field>
+            <operation>notContain</operation>
+            <value>4 Days Pending</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.labels__c</field>
+            <operation>notContain</operation>
+            <value>License_Pending</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.labels__c</field>
+            <operation>notContain</operation>
+            <value>Internal_Pending</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.labels__c</field>
+            <operation>notContain</operation>
+            <value>Engineering Pending</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.labels__c</field>
+            <operation>notContain</operation>
+            <value>Service Order Pending</value>
+        </criteriaItems>
+        <description>First pending reminder</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Reminder_Mail_1</name>
+                <type>Alert</type>
+            </actions>
+            <actions>
+                <name>Pending_Remidner_1</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <offsetFromField>Case.Pending_At__c</offsetFromField>
+            <timeLength>24</timeLength>
+            <workflowTimeTriggerUnit>Hours</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Pending Reminder 2</fullName>
+        <active>true</active>
+        <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND 6</booleanFilter>
+        <criteriaItems>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>Pending</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.labels__c</field>
+            <operation>notContain</operation>
+            <value>Engineering Pending</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.labels__c</field>
+            <operation>notContain</operation>
+            <value>Transguard</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.labels__c</field>
+            <operation>notContain</operation>
+            <value>RMA_Pending</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.labels__c</field>
+            <operation>notContain</operation>
+            <value>Internal_Pending</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.labels__c</field>
+            <operation>notContain</operation>
+            <value>Service Order Pending</value>
+        </criteriaItems>
+        <description>Second pending reminder</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Reminder_Mail_2</name>
+                <type>Alert</type>
+            </actions>
+            <actions>
+                <name>pending_reminder_2</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <offsetFromField>Case.Pending_At__c</offsetFromField>
+            <timeLength>48</timeLength>
+            <workflowTimeTriggerUnit>Hours</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Pending Reminder Final</fullName>
+        <active>true</active>
+        <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND 6</booleanFilter>
+        <criteriaItems>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>Pending</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.labels__c</field>
+            <operation>notContain</operation>
+            <value>Transguard</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.labels__c</field>
+            <operation>notContain</operation>
+            <value>Engineering Pending</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.labels__c</field>
+            <operation>notContain</operation>
+            <value>Internal_Pending</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.labels__c</field>
+            <operation>notContain</operation>
+            <value>RMA_Pending</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.labels__c</field>
+            <operation>notContain</operation>
+            <value>Service Order Pending</value>
+        </criteriaItems>
+        <description>Final pending reminder</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Reminder_Mail_Final</name>
+                <type>Alert</type>
+            </actions>
+            <actions>
+                <name>PENDING_REMINDER_FINAL</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <offsetFromField>Case.Pending_At__c</offsetFromField>
+            <timeLength>96</timeLength>
+            <workflowTimeTriggerUnit>Hours</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Priority change</fullName>
+        <actions>
+            <name>Priority_8</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>New</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Origin</field>
+            <operation>equals</operation>
+            <value>Email</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Name</field>
+            <operation>contains</operation>
+            <value>Transguard</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Re-open 8 hr Pending Case</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>Pending</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.labels__c</field>
+            <operation>contains</operation>
+            <value>8 hours</value>
+        </criteriaItems>
+        <description>Re-open 8 hr Pending Case</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>labels1</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <actions>
+                <name>status1</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <offsetFromField>Case.Pending_At__c</offsetFromField>
+            <timeLength>8</timeLength>
+            <workflowTimeTriggerUnit>Hours</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Re-open 9 hr Pending Case</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>Pending</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.labels__c</field>
+            <operation>contains</operation>
+            <value>9 hours</value>
+        </criteriaItems>
+        <description>Re-open 9 hr Pending Case</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>label2</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <actions>
+                <name>status2</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <offsetFromField>Case.Pending_At__c</offsetFromField>
+            <timeLength>9</timeLength>
+            <workflowTimeTriggerUnit>Hours</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Re-open Engineering Pending Case</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>Pending,Open</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Labels_Pickval__c</field>
+            <operation>contains</operation>
+            <value>Engineering Pending</value>
+        </criteriaItems>
+        <description>Re-open Engineering Pending Case</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Engineering_Pending</name>
+                <type>Alert</type>
+            </actions>
+            <actions>
+                <name>status</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <offsetFromField>Case.Pending_At__c</offsetFromField>
+            <timeLength>24</timeLength>
+            <workflowTimeTriggerUnit>Hours</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Resolved At Time</fullName>
+        <actions>
+            <name>Resolved_TIme</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>Resolved</value>
+        </criteriaItems>
+        <description>Timestamp when case reach resolved state</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>UpdateSLAViolatedCheckbox</fullName>
+        <actions>
+            <name>SetSLAViolationToTrue</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>(PRIORVALUE( IsEscalated ))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>UpdateSLAViolationDate</fullName>
+        <actions>
+            <name>UpdateSLA</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>AND(ISCHANGED(IsEscalated),IsEscalated)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

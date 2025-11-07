@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>65.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <name>myRule_1</name>
+        <label>When Case is open</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>myRule_5</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Country Not India</defaultConnectorLabel>
+        <rules>
+            <name>Indian_Case_is_Opened</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.country_assignment__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>India</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record__Prior.Status</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Open</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Open</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_1_A1</targetReference>
+            </connector>
+            <label>Indian Case is Opened</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>myRule_5</name>
+        <label>UpdateOpenDateForCanada</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>Case Is not Opened</defaultConnectorLabel>
+        <rules>
+            <name>Canadian_Case_Is_opened</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.country_assignment__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Canada</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Open</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record__Prior.Status</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Open</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_5_A1</targetReference>
+            </connector>
+            <label>Canadian Case Is opened</label>
+        </rules>
+    </decisions>
+    <description>Migrated from the Update Case Open Date and Time process using multiple criteria.</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>FormulaForCanadianTimeAssignment</name>
+        <dataType>DateTime</dataType>
+        <expression>IF(AND(VALUE(MID( TEXT( NOW() ), 12, 2)) &gt;= 14,VALUE(MID( TEXT( NOW() ), 12, 2)) &lt;= 22)
+,NOW()
+,IF(OR(VALUE(MID( TEXT( NOW() ), 12, 2)) &lt; 14)
+,DATETIMEVALUE(TEXT(YEAR(DATEVALUE(NOW())))+&quot;-&quot; +TEXT(MONTH(DATEVALUE(NOW())))+&quot;-&quot; +TEXT(DAY(DATEVALUE(NOW())))+&quot; 14:00:00&quot;)
+,DATETIMEVALUE(TEXT(YEAR(DATEVALUE(NOW())))+&quot;-&quot; +TEXT(MONTH(DATEVALUE(NOW())))+&quot;-&quot; +TEXT(DAY(DATEVALUE(NOW())))+&quot; 22:00:00&quot;)))</expression>
+    </formulas>
+    <formulas>
+        <name>FormulaForIndiantimeAsignment</name>
+        <dataType>DateTime</dataType>
+        <expression>IF(AND(VALUE(MID( TEXT( NOW() ), 12, 2)) &gt;= 4,VALUE(MID( TEXT( NOW() ), 12, 2)) &lt;= 13)
+	,NOW()
+	,IF(OR(VALUE(MID( TEXT( NOW() ), 12, 2)) &gt;= 19,VALUE(MID( TEXT( NOW() ), 12, 2)) &lt; 4)
+		,DATETIMEVALUE(TEXT(YEAR(DATEVALUE(NOW())))+&quot;-&quot; +TEXT(MONTH(DATEVALUE(NOW())))+&quot;-&quot; +TEXT(DAY(DATEVALUE(NOW())))+&quot; 4:00:00&quot;)
+			,DATETIMEVALUE(TEXT(YEAR(DATEVALUE(NOW())))+&quot;-&quot; +TEXT(MONTH(DATEVALUE(NOW())))+&quot;-&quot; +TEXT(DAY(DATEVALUE(NOW())))+&quot; 13:00:00&quot;)))</expression>
+    </formulas>
+    <formulas>
+        <name>NOW</name>
+        <dataType>DateTime</dataType>
+        <expression>NOW()</expression>
+    </formulas>
+    <label>Update Case Open Date and Time_1</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>myRule_1_A1</name>
+        <label>Update Open Date and time to now</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <inputAssignments>
+            <field>Date_Time_Open_Status_changed__c</field>
+        </inputAssignments>
+        <inputAssignments>
+            <field>opened_at__c</field>
+            <value>
+                <elementReference>FormulaForIndiantimeAsignment</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>tempOpenDate__c</field>
+            <value>
+                <elementReference>NOW</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>myRule_5_A1</name>
+        <label>UpdateTimeForCanada</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <inputAssignments>
+            <field>Date_Time_Open_Status_changed__c</field>
+        </inputAssignments>
+        <inputAssignments>
+            <field>opened_at__c</field>
+            <value>
+                <elementReference>FormulaForCanadianTimeAssignment</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>tempOpenDate__c</field>
+            <value>
+                <elementReference>NOW</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>myRule_1</targetReference>
+        </connector>
+        <object>Case</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Draft</status>
+</Flow>

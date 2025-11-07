@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Create_Opportunity</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <hasMenubar>false</hasMenubar>
+    <hasScrollbars>true</hasScrollbars>
+    <hasToolbar>false</hasToolbar>
+    <height>600</height>
+    <isResizable>true</isResizable>
+    <linkType>url</linkType>
+    <masterLabel>Create Opportunity</masterLabel>
+    <openType>newWindow</openType>
+    <position>none</position>
+    <protected>false</protected>
+    <showsLocation>false</showsLocation>
+    <showsStatus>false</showsStatus>
+    <url>/006/e?opp4_lkid={!Sales_Order__c.Customer_NameId__c}&amp;retURL={!Sales_Order__c.Customer_NameId__c}&amp;00N1500000IPVHm={!Sales_Order__c.Year__c}&amp;00N1500000IPQpc={!Sales_Order__c.Region__c}&amp;opp11=PO Received&amp;opp9={!Sales_Order__c.Date_Received__c}&amp;opp3={!Sales_Order__c.Customer_Name__c}+-+{!Sales_Order__c.Quantity__c}+{!Sales_Order__c.Product__c}&amp;opp7={!Sales_Order__c.Reporting__c}&amp;opp12=90</url>
+</WebLink>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- RMA Status --></label>
+    <name>custom_rma_status__c</name>
+    <picklistValues>
+        <masterLabel>Cancel</masterLabel>
+        <translation><!-- Cancel --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Device Received</masterLabel>
+        <translation><!-- Device Received --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Initiated</masterLabel>
+        <translation><!-- Initiated --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Repaired</masterLabel>
+        <translation><!-- Repaired --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Replacement</masterLabel>
+        <translation><!-- Replacement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Shipping Back</masterLabel>
+        <translation><!-- Shipping Back --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Under Reapired</masterLabel>
+        <translation><!-- Under Reapired --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

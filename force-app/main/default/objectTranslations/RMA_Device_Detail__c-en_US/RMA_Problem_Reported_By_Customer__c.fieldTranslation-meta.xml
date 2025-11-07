@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Mention a brief (single line statement) on the problem reported by customer for RMA --></help>
+    <label><!-- RMA Problem Reported By Customer --></label>
+    <name>RMA_Problem_Reported_By_Customer__c</name>
+</CustomFieldTranslation>

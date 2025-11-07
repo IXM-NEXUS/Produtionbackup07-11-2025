@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sales_Target_YTD__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(ISPICKVAL(Region__c,&quot;Africa&quot;),135000,
+IF(ISPICKVAL(Region__c,&quot;APAC&quot;),350000,
+IF(ISPICKVAL(Region__c,&quot;Europe&quot;),250000,
+IF(ISPICKVAL(Region__c,&quot;House&quot;),250000,
+IF(ISPICKVAL(Region__c,&quot;India&quot;),1521831,
+IF(ISPICKVAL(Region__c,&quot;Middle East&quot;),1518884,
+IF(ISPICKVAL(Region__c,&quot;NA&quot;),480000,
+IF(ISPICKVAL(Region__c,&quot;APAC - BC&quot;),0,
+IF(ISPICKVAL(Region__c,&quot;UAE&quot;),888804,0)))))))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Sales Target - YTD</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

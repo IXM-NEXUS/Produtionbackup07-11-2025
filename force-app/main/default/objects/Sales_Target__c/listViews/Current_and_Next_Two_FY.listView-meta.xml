@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Current_and_Next_Two_FY</fullName>
+    <columns>NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Year__c</field>
+        <operation>greaterOrEqual</operation>
+        <value>2019</value>
+    </filters>
+    <label>Current and Next Two FY</label>
+</ListView>

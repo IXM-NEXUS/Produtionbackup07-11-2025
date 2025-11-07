@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Device Type --></label>
+    <name>Device_Type__c</name>
+    <picklistValues>
+        <masterLabel>BF-50 SECURE RELAY BOX</masterLabel>
+        <translation><!-- BF-50 SECURE RELAY BOX --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CR</masterLabel>
+        <translation><!-- CR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CR+</masterLabel>
+        <translation><!-- CR+ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CREDENCE TAB</masterLabel>
+        <translation><!-- CREDENCE TAB --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FP1</masterLabel>
+        <translation><!-- FP1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FP1X</masterLabel>
+        <translation><!-- FP1X --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FP2</masterLabel>
+        <translation><!-- FP2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FP21</masterLabel>
+        <translation><!-- FP21 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FP21X</masterLabel>
+        <translation><!-- FP21X --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FP22</masterLabel>
+        <translation><!-- FP22 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FP22+</masterLabel>
+        <translation><!-- FP22+ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FP22W</masterLabel>
+        <translation><!-- FP22W --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FP22X</masterLabel>
+        <translation><!-- FP22X --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FP2X</masterLabel>
+        <translation><!-- FP2X --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FP3</masterLabel>
+        <translation><!-- FP3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FP3X</masterLabel>
+        <translation><!-- FP3X --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FP4</masterLabel>
+        <translation><!-- FP4 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FP4+</masterLabel>
+        <translation><!-- FP4+ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FP4X</masterLabel>
+        <translation><!-- FP4X --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FP5</masterLabel>
+        <translation><!-- FP5 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FP5X</masterLabel>
+        <translation><!-- FP5X --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FPL1</masterLabel>
+        <translation><!-- FPL1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FPL1X</masterLabel>
+        <translation><!-- FPL1X --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FPL2</masterLabel>
+        <translation><!-- FPL2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FPL21</masterLabel>
+        <translation><!-- FPL21 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FPL21X</masterLabel>
+        <translation><!-- FPL21X --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FPL22</masterLabel>
+        <translation><!-- FPL22 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FPL22X</masterLabel>
+        <translation><!-- FPL22X --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FPL2X</masterLabel>
+        <translation><!-- FPL2X --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FPL3</masterLabel>
+        <translation><!-- FPL3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FPL3X</masterLabel>
+        <translation><!-- FPL3X --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FPL4</masterLabel>
+        <translation><!-- FPL4 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FPL4X</masterLabel>
+        <translation><!-- FPL4X --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FPL5</masterLabel>
+        <translation><!-- FPL5 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FPL5X</masterLabel>
+        <translation><!-- FPL5X --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FPLV1</masterLabel>
+        <translation><!-- FPLV1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FPLV2</masterLabel>
+        <translation><!-- FPLV2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FPLV5</masterLabel>
+        <translation><!-- FPLV5 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FPU1</masterLabel>
+        <translation><!-- FPU1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FPU2</masterLabel>
+        <translation><!-- FPU2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FPU22</masterLabel>
+        <translation><!-- FPU22 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FPU4</masterLabel>
+        <translation><!-- FPU4 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FPU5</masterLabel>
+        <translation><!-- FPU5 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FV1</masterLabel>
+        <translation><!-- FV1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FV2</masterLabel>
+        <translation><!-- FV2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FV5</masterLabel>
+        <translation><!-- FV5 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LUMIDIGM MERCURY SENSOR M311</masterLabel>
+        <translation><!-- LUMIDIGM MERCURY SENSOR M311 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SECUGEN HAMSTER PLUS</masterLabel>
+        <translation><!-- SECUGEN HAMSTER PLUS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TAB</masterLabel>
+        <translation><!-- TAB --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TWO</masterLabel>
+        <translation><!-- TWO --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Quarter__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(TEXT(Month__c) = &quot;Jan&quot;, &quot;Q1&quot;, 
+IF(TEXT(Month__c) = &quot;Feb&quot;, &quot;Q1&quot;, 
+IF(TEXT(Month__c) = &quot;Mar&quot;, &quot;Q1&quot;, 
+IF(TEXT(Month__c) = &quot;Apr&quot;, &quot;Q2&quot;, 
+IF(TEXT(Month__c) = &quot;May&quot;, &quot;Q2&quot;, 
+IF(TEXT(Month__c) = &quot;Jun&quot;, &quot;Q2&quot;, 
+IF(TEXT(Month__c) = &quot;Jul&quot;, &quot;Q3&quot;, 
+IF(TEXT(Month__c) = &quot;Aug&quot;, &quot;Q3&quot;, 
+IF(TEXT(Month__c) = &quot;Sep&quot;, &quot;Q3&quot;, 
+IF(TEXT(Month__c) = &quot;Oct&quot;, &quot;Q4&quot;, 
+IF(TEXT(Month__c) = &quot;Nov&quot;, &quot;Q4&quot;, 
+IF(TEXT(Month__c) = &quot;Dec&quot;, &quot;Q4&quot;, &quot;&quot;))))))))))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Quarter Shipped</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

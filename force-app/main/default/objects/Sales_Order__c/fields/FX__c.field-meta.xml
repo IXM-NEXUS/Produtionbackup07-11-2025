@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FX__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(TEXT(Currency__c)=&quot;USD&quot;,1,IF(TEXT(Currency__c)=&quot;Rupee&quot;,0.01485,IF(TEXT(Currency__c)=&quot;CAD&quot;,0.7460,NULL)))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>FX</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>4</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

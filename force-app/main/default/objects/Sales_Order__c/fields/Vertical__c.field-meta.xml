@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Vertical__c</fullName>
+    <label>Vertical</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Smart Home</fullName>
+                <default>false</default>
+                <label>Smart Home</label>
+            </value>
+            <value>
+                <fullName>Residential EA</fullName>
+                <default>false</default>
+                <label>Residential EA</label>
+            </value>
+            <value>
+                <fullName>Corporate EA</fullName>
+                <default>false</default>
+                <label>Corporate EA</label>
+            </value>
+            <value>
+                <fullName>Seeding Units</fullName>
+                <default>false</default>
+                <label>Seeding Units</label>
+            </value>
+            <value>
+                <fullName>Intercompany</fullName>
+                <default>false</default>
+                <label>Intercompany</label>
+            </value>
+            <value>
+                <fullName>Internal</fullName>
+                <default>false</default>
+                <label>Internal</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

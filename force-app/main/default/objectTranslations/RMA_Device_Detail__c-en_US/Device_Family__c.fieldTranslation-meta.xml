@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Device Family --></label>
+    <name>Device_Family__c</name>
+    <picklistValues>
+        <masterLabel>ICP</masterLabel>
+        <translation><!-- ICP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MERGE</masterLabel>
+        <translation><!-- MERGE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MERGE 2</masterLabel>
+        <translation><!-- MERGE 2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MYCRO</masterLabel>
+        <translation><!-- MYCRO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SENSE</masterLabel>
+        <translation><!-- SENSE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SENSE 2</masterLabel>
+        <translation><!-- SENSE 2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TFACE</masterLabel>
+        <translation><!-- TFACE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TITAN</masterLabel>
+        <translation><!-- TITAN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TITAN GEN 2</masterLabel>
+        <translation><!-- TITAN GEN 2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TOUCH</masterLabel>
+        <translation><!-- TOUCH --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TOUCH 2</masterLabel>
+        <translation><!-- TOUCH 2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TOUCH LITE</masterLabel>
+        <translation><!-- TOUCH LITE --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

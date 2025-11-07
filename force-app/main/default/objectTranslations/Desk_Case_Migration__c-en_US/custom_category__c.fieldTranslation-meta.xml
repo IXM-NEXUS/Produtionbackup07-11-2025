@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Category --></label>
+    <name>custom_category__c</name>
+    <picklistValues>
+        <masterLabel>Control4 Driver Issue</masterLabel>
+        <translation><!-- Control4 Driver Issue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Control4 Driver Query</masterLabel>
+        <translation><!-- Control4 Driver Query --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Control4 Driver Request</masterLabel>
+        <translation><!-- Control4 Driver Request --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Control4 Issues</masterLabel>
+        <translation><!-- Control4 Issues --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Credance Tab Issue</masterLabel>
+        <translation><!-- Credance Tab Issue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customization Feature Support</masterLabel>
+        <translation><!-- Customization Feature Support --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customization License Request</masterLabel>
+        <translation><!-- Customization License Request --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customization Query</masterLabel>
+        <translation><!-- Customization Query --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customization Troubleshooting</masterLabel>
+        <translation><!-- Customization Troubleshooting --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customized Firmware Upgrade</masterLabel>
+        <translation><!-- Customized Firmware Upgrade --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customized IXM WEB Upgrade</masterLabel>
+        <translation><!-- Customized IXM WEB Upgrade --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Documentation Query</masterLabel>
+        <translation><!-- Documentation Query --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Enrollment Issue</masterLabel>
+        <translation><!-- Enrollment Issue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Feature Support Query</masterLabel>
+        <translation><!-- Feature Support Query --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Firmware Query</masterLabel>
+        <translation><!-- Firmware Query --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Firmware Troubleshooting</masterLabel>
+        <translation><!-- Firmware Troubleshooting --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Firmware Upgrade</masterLabel>
+        <translation><!-- Firmware Upgrade --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hardware Issue</masterLabel>
+        <translation><!-- Hardware Issue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IXM Convert Query</masterLabel>
+        <translation><!-- IXM Convert Query --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IXM TIME v1 Query</masterLabel>
+        <translation><!-- IXM TIME v1 Query --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IXM TIME v1 Troubleshooting</masterLabel>
+        <translation><!-- IXM TIME v1 Troubleshooting --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IXM WEB &amp; Firmware Troubleshooting</masterLabel>
+        <translation><!-- IXM WEB &amp; Firmware Troubleshooting --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IXM WEB &amp; Firmware Upgrade</masterLabel>
+        <translation><!-- IXM WEB &amp; Firmware Upgrade --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IXM WEB Key replacement</masterLabel>
+        <translation><!-- IXM WEB Key replacement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IXM WEB Query</masterLabel>
+        <translation><!-- IXM WEB Query --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IXM WEB Troubleshooting</masterLabel>
+        <translation><!-- IXM WEB Troubleshooting --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IXM WEB Upgrade</masterLabel>
+        <translation><!-- IXM WEB Upgrade --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IXM WEB/Firmware Request</masterLabel>
+        <translation><!-- IXM WEB/Firmware Request --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>License Request</masterLabel>
+        <translation><!-- License Request --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lumudigm USB Sensor Issue</masterLabel>
+        <translation><!-- Lumudigm USB Sensor Issue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lumudigm USB Sensor Query</masterLabel>
+        <translation><!-- Lumudigm USB Sensor Query --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MERGE Sensor Issue</masterLabel>
+        <translation><!-- MERGE Sensor Issue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Please Select</masterLabel>
+        <translation><!-- Please Select --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Portal Access request</masterLabel>
+        <translation><!-- Portal Access request --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Presale Call</masterLabel>
+        <translation><!-- Presale Call --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Query from Ringcenral</masterLabel>
+        <translation><!-- Query from Ringcenral --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RMA Status Enquiry</masterLabel>
+        <translation><!-- RMA Status Enquiry --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Report Issue</masterLabel>
+        <translation><!-- Report Issue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Report Query</masterLabel>
+        <translation><!-- Report Query --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SDK Issue</masterLabel>
+        <translation><!-- SDK Issue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SDK Query</masterLabel>
+        <translation><!-- SDK Query --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SDK Upgrade</masterLabel>
+        <translation><!-- SDK Upgrade --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SDK2 Issue</masterLabel>
+        <translation><!-- SDK2 Issue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SDK2 Query</masterLabel>
+        <translation><!-- SDK2 Query --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SDK2 Upgrade</masterLabel>
+        <translation><!-- SDK2 Upgrade --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Savant Issue</masterLabel>
+        <translation><!-- Savant Issue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Savant Query</masterLabel>
+        <translation><!-- Savant Query --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Secugen USB Sensor Issue</masterLabel>
+        <translation><!-- Secugen USB Sensor Issue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Secugen USB Sensor Query</masterLabel>
+        <translation><!-- Secugen USB Sensor Query --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Secure Relay Issue</masterLabel>
+        <translation><!-- Secure Relay Issue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Secure Relay Query</masterLabel>
+        <translation><!-- Secure Relay Query --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Third Party Integration Query</masterLabel>
+        <translation><!-- Third Party Integration Query --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Third Party Software/Tool Issue</masterLabel>
+        <translation><!-- Third Party Software/Tool Issue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Training Request</masterLabel>
+        <translation><!-- Training Request --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TransGuard - Feature Support Query</masterLabel>
+        <translation><!-- TransGuard - Feature Support Query --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TransGuard - Firmware Query</masterLabel>
+        <translation><!-- TransGuard - Firmware Query --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TransGuard - Firmware Troubleshooting</masterLabel>
+        <translation><!-- TransGuard - Firmware Troubleshooting --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TransGuard - IXM WEB &amp; Firmware Troubleshooting</masterLabel>
+        <translation><!-- TransGuard - IXM WEB &amp; Firmware Troubleshooting --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TransGuard - IXM WEB Query</masterLabel>
+        <translation><!-- TransGuard - IXM WEB Query --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TransGuard - IXM WEB Troubleshooting</masterLabel>
+        <translation><!-- TransGuard - IXM WEB Troubleshooting --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TransGuard - Reporting</masterLabel>
+        <translation><!-- TransGuard - Reporting --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TransGuard - Upgrade</masterLabel>
+        <translation><!-- TransGuard - Upgrade --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Warranty Policy</masterLabel>
+        <translation><!-- Warranty Policy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wiring Connection Query</masterLabel>
+        <translation><!-- Wiring Connection Query --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

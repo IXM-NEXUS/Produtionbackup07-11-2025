@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Defect Code --></label>
+    <name>Hardware_Issue__c</name>
+    <picklistValues>
+        <masterLabel>ACP_LED lines damaged</masterLabel>
+        <translation><!-- ACP_LED lines damaged --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Android Crash</masterLabel>
+        <translation><!-- Android Crash --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Audio Issue</masterLabel>
+        <translation><!-- Audio Issue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Battery Issue</masterLabel>
+        <translation><!-- Battery Issue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Boot-Up Issue</masterLabel>
+        <translation><!-- Boot-Up Issue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Camera Issue</masterLabel>
+        <translation><!-- Camera Issue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Card Detection Issue</masterLabel>
+        <translation><!-- Card Detection Issue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Card Reader Damaged</masterLabel>
+        <translation><!-- Card Reader Damaged --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Card Reader Error</masterLabel>
+        <translation><!-- Card Reader Error --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cellular not detecting.</masterLabel>
+        <translation><!-- Cellular not detecting. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Crack on front-shell</masterLabel>
+        <translation><!-- Crack on front-shell --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Device Database Error</masterLabel>
+        <translation><!-- Device Database Error --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Device Hang Issue</masterLabel>
+        <translation><!-- Device Hang Issue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Door Relay Issue</masterLabel>
+        <translation><!-- Door Relay Issue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Faulty IO Cables</masterLabel>
+        <translation><!-- Faulty IO Cables --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hardware Issue with Enhancement Kit</masterLabel>
+        <translation><!-- Hardware Issue with Enhancement Kit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Incompatible Firmware Flash</masterLabel>
+        <translation><!-- Incompatible Firmware Flash --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Input Wiegand Line Damaged</masterLabel>
+        <translation><!-- Input Wiegand Line Damaged --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LCD Issues</masterLabel>
+        <translation><!-- LCD Issues --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mechanical Defect</masterLabel>
+        <translation><!-- Mechanical Defect --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Microphone Issue</masterLabel>
+        <translation><!-- Microphone Issue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Moist issue in Device</masterLabel>
+        <translation><!-- Moist issue in Device --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NAND Corruption</masterLabel>
+        <translation><!-- NAND Corruption --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Ethernet</masterLabel>
+        <translation><!-- No Ethernet --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Output Wiegand Line Damaged</masterLabel>
+        <translation><!-- Output Wiegand Line Damaged --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Physically Damaged</masterLabel>
+        <translation><!-- Physically Damaged --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Power Issue</masterLabel>
+        <translation><!-- Power Issue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Proximity Sensor Defect</masterLabel>
+        <translation><!-- Proximity Sensor Defect --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RS485 Line Issue</masterLabel>
+        <translation><!-- RS485 Line Issue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Random Reboot Issue</masterLabel>
+        <translation><!-- Random Reboot Issue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SPIO Line Damaged</masterLabel>
+        <translation><!-- SPIO Line Damaged --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sensor Issue</masterLabel>
+        <translation><!-- Sensor Issue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Speaker Issue</masterLabel>
+        <translation><!-- Speaker Issue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Stock Return</masterLabel>
+        <translation><!-- Stock Return --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>White LCD</masterLabel>
+        <translation><!-- White LCD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wrong Device Sent</masterLabel>
+        <translation><!-- Wrong Device Sent --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

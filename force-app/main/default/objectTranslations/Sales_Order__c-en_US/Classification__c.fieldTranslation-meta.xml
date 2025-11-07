@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Classification --></label>
+    <name>Classification__c</name>
+    <picklistValues>
+        <masterLabel>BioAPI SDK</masterLabel>
+        <translation><!-- BioAPI SDK --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Engineering Services</masterLabel>
+        <translation><!-- Engineering Services --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>H1</masterLabel>
+        <translation><!-- H1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ICP</masterLabel>
+        <translation><!-- ICP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MERGE</masterLabel>
+        <translation><!-- MERGE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MYCRO</masterLabel>
+        <translation><!-- MYCRO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MYCRO - C</masterLabel>
+        <translation><!-- MYCRO - C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other - C</masterLabel>
+        <translation><!-- Other - C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SDK</masterLabel>
+        <translation><!-- SDK --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SDK - C</masterLabel>
+        <translation><!-- SDK - C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SDK2 - C</masterLabel>
+        <translation><!-- SDK2 - C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SENSE</masterLabel>
+        <translation><!-- SENSE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SENSE (S)</masterLabel>
+        <translation><!-- SENSE (S) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SENSE - C</masterLabel>
+        <translation><!-- SENSE - C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Starter</masterLabel>
+        <translation><!-- Starter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Starter SH</masterLabel>
+        <translation><!-- Starter SH --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>T&amp;A</masterLabel>
+        <translation><!-- T&amp;A --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TOUCH</masterLabel>
+        <translation><!-- TOUCH --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TOUCH - C</masterLabel>
+        <translation><!-- TOUCH - C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Taxes</masterLabel>
+        <translation><!-- Taxes --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UBRs</masterLabel>
+        <translation><!-- UBRs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Warranty</masterLabel>
+        <translation><!-- Warranty --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Warranty - deferred</masterLabel>
+        <translation><!-- Warranty - deferred --></translation>
+    </picklistValues>
+</CustomFieldTranslation>
